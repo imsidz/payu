@@ -20,6 +20,7 @@
         {
             "name": "imsidz",
             "email": "imsidzluv@gmail.com",
+            "homepage": "https://tzsk.githu.io",
             "role": "Developer"
         }
     ],
@@ -39,12 +40,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Tzsk\\Payu\\": "src"
+            "Imsidz\\Payu\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tzsk\\Payu\\Tests\\": "tests"
+            "Imsidz\\Payu\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -59,10 +60,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Tzsk\\Payu\\PayuServiceProvider"
+                "Imsidz\\Payu\\PayuServiceProvider"
             ],
             "aliases": {
-                "Payu": "Tzsk\\Payu\\Facades\\Payu"
+                "Payu": "Imsidz\\Payu\\Facades\\Payu"
             }
         }
     },
