@@ -1,9 +1,9 @@
 <?php
 
-use Tzsk\Payu\Gateway\Gateway;
-use Tzsk\Payu\Gateway\PayuBiz;
-use Tzsk\Payu\Gateway\PayuMoney;
-use Tzsk\Payu\Models\PayuTransaction;
+use Imsidz\Payu\Gateway\Gateway;
+use Imsidz\Payu\Gateway\PayuBiz;
+use Imsidz\Payu\Gateway\PayuMoney;
+use Imsidz\Payu\Models\PayuTransaction;
 
 return [
     'default' => env('PAYU_DEFAULT_GATEWAY', 'biz'),
