@@ -1,12 +1,12 @@
 <?php
 
-namespace Tzsk\Payu\Controllers;
+namespace Imsidz\Payu\Controllers;
 
 use Illuminate\Http\Request;
-use Tzsk\Payu\Actions\Actionable;
-use Tzsk\Payu\Actions\FailedResponse;
-use Tzsk\Payu\Actions\SuccessResponse;
-use Tzsk\Payu\Models\PayuTransaction;
+use Imsidz\Payu\Actions\Actionable;
+use Imsidz\Payu\Actions\FailedResponse;
+use Imsidz\Payu\Actions\SuccessResponse;
+use Imsidz\Payu\Models\PayuTransaction;
 
 class StatusController
 {
@@ -37,7 +37,7 @@ class StatusController
 
     protected function checkValidation(Request $request)
     {
-        if (! $request->hasValidSignature()) {
+        if (!$request->hasValidSignature()) {
             abort(403);
         }
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace Tzsk\Payu;
+namespace Imsidz\Payu;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\View\Compilers\BladeCompiler;
-use Tzsk\Payu\Commands\PublishComponents;
-use Tzsk\Payu\Commands\VerifyPendingTransactions;
-use Tzsk\Payu\Components\Form;
+use Imsidz\Payu\Commands\PublishComponents;
+use Imsidz\Payu\Commands\VerifyPendingTransactions;
+use Imsidz\Payu\Components\Form;
 
 class PayuServiceProvider extends ServiceProvider
 {
@@ -25,7 +25,7 @@ class PayuServiceProvider extends ServiceProvider
             $migrationFileName = 'create_payu_transactions_table.php';
             $source = __DIR__ . "/../database/migrations/{$migrationFileName}";
 
-            if (! $this->migrationFileExists($migrationFileName)) {
+            if (!$this->migrationFileExists($migrationFileName)) {
                 $destination = database_path('migrations/' . date('Y_m_d_His', time()) . '_' . $migrationFileName);
                 $this->publishes([$source => $destination], 'payu-migration');
             }

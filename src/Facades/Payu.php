@@ -1,14 +1,14 @@
 <?php
 
-namespace Tzsk\Payu\Facades;
+namespace Imsidz\Payu\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use Tzsk\Payu\Concerns\Transaction;
-use Tzsk\Payu\Models\PayuTransaction;
+use Imsidz\Payu\Concerns\Transaction;
+use Imsidz\Payu\Models\PayuTransaction;
 
 /**
- * @see \Tzsk\Payu\Payu
- * @method static \Tzsk\Payu\Payu initiate(Transaction $payment)
+ * @see \Imsidz\Payu\Payu
+ * @method static \Imsidz\Payu\Payu initiate(Transaction $payment)
  * @method static PayuTransaction capture()
  */
 class Payu extends Facade

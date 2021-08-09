@@ -1,11 +1,11 @@
 <?php
 
-namespace Tzsk\Payu\Commands;
+namespace Imsidz\Payu\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
-use Tzsk\Payu\Jobs\VerifyTransaction;
-use Tzsk\Payu\Models\PayuTransaction;
+use Imsidz\Payu\Jobs\VerifyTransaction;
+use Imsidz\Payu\Models\PayuTransaction;
 
 class VerifyPendingTransactions extends Command
 {

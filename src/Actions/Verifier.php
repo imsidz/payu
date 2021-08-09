@@ -1,10 +1,10 @@
 <?php
 
-namespace Tzsk\Payu\Actions;
+namespace Imsidz\Payu\Actions;
 
-use Tzsk\Payu\Events\TransactionFailed;
-use Tzsk\Payu\Events\TransactionSuccessful;
-use Tzsk\Payu\Models\PayuTransaction;
+use Imsidz\Payu\Events\TransactionFailed;
+use Imsidz\Payu\Events\TransactionSuccessful;
+use Imsidz\Payu\Models\PayuTransaction;
 
 trait Verifier
 {

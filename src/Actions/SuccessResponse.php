@@ -1,12 +1,12 @@
 <?php
 
-namespace Tzsk\Payu\Actions;
+namespace Imsidz\Payu\Actions;
 
 use Illuminate\Http\Request;
-use Tzsk\Payu\Checksum;
-use Tzsk\Payu\Events\TransactionInvalidated;
-use Tzsk\Payu\Events\TransactionSuccessful;
-use Tzsk\Payu\Models\PayuTransaction;
+use Imsidz\Payu\Checksum;
+use Imsidz\Payu\Events\TransactionInvalidated;
+use Imsidz\Payu\Events\TransactionSuccessful;
+use Imsidz\Payu\Models\PayuTransaction;
 
 class SuccessResponse implements Actionable
 {

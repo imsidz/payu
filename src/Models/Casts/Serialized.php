@@ -1,6 +1,6 @@
 <?php
 
-namespace Tzsk\Payu\Models\Casts;
+namespace Imsidz\Payu\Models\Casts;
 
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 

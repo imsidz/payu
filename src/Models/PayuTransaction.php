@@ -1,22 +1,22 @@
 <?php
 
-namespace Tzsk\Payu\Models;
+namespace Imsidz\Payu\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Carbon;
-use Tzsk\Payu\Concerns\Transaction;
-use Tzsk\Payu\Gateway\Gateway;
-use Tzsk\Payu\Gateway\PayuBiz;
-use Tzsk\Payu\Gateway\PayuMoney;
-use Tzsk\Payu\Jobs\VerifyTransaction;
-use Tzsk\Payu\Models\Casts\Serialized;
+use Imsidz\Payu\Concerns\Transaction;
+use Imsidz\Payu\Gateway\Gateway;
+use Imsidz\Payu\Gateway\PayuBiz;
+use Imsidz\Payu\Gateway\PayuMoney;
+use Imsidz\Payu\Jobs\VerifyTransaction;
+use Imsidz\Payu\Models\Casts\Serialized;
 
 /**
  * Class PayuPayments
- * @package Tzsk\Payu\Models
+ * @package Imsidz\Payu\Models
  *
  * @property string $transaction_id;
  * @property PayuMoney|PayuBiz $gateway
@@ -108,7 +108,7 @@ class PayuTransaction extends Model
 
     public function verified()
     {
-        return ! empty($this->verified_at);
+        return !empty($this->verified_at);
     }
 
     public function shouldVerify()

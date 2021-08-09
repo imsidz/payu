@@ -1,6 +1,6 @@
 <?php
 
-namespace Tzsk\Payu;
+namespace Imsidz\Payu;
 
 class Checksum
 {

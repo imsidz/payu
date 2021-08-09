@@ -1,6 +1,6 @@
 <?php
 
-namespace Tzsk\Payu\Models;
+namespace Imsidz\Payu\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;

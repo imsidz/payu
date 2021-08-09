@@ -1,6 +1,6 @@
 <?php
 
-namespace Tzsk\Payu\Contracts;
+namespace Imsidz\Payu\Contracts;
 
 use Illuminate\Contracts\Support\Arrayable;
 

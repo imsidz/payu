@@ -1,11 +1,11 @@
 <?php
 
-namespace Tzsk\Payu\Gateway;
+namespace Imsidz\Payu\Gateway;
 
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
-use Tzsk\Payu\Actions\Actionable;
-use Tzsk\Payu\Actions\VerifyPayuBiz;
+use Imsidz\Payu\Actions\Actionable;
+use Imsidz\Payu\Actions\VerifyPayuBiz;
 
 class PayuBiz extends Gateway
 {

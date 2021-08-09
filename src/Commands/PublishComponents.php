@@ -1,6 +1,6 @@
 <?php
 
-namespace Tzsk\Payu\Commands;
+namespace Imsidz\Payu\Commands;
 
 use Illuminate\Console\Command;
 

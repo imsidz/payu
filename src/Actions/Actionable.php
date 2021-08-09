@@ -1,8 +1,8 @@
 <?php
 
-namespace Tzsk\Payu\Actions;
+namespace Imsidz\Payu\Actions;
 
-use Tzsk\Payu\Models\PayuTransaction;
+use Imsidz\Payu\Models\PayuTransaction;
 
 interface Actionable
 {

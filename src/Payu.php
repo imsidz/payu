@@ -1,6 +1,6 @@
 <?php
 
-namespace Tzsk\Payu;
+namespace Imsidz\Payu;
 
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\URL;
@@ -8,13 +8,13 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 use Illuminate\View\View;
 use Throwable;
-use Tzsk\Payu\Components\Form;
-use Tzsk\Payu\Concerns\Transaction;
-use Tzsk\Payu\Contracts\HasFormParams;
-use Tzsk\Payu\Events\TransactionInitiated;
-use Tzsk\Payu\Gateway\Factory;
-use Tzsk\Payu\Gateway\Gateway;
-use Tzsk\Payu\Models\PayuTransaction;
+use Imsidz\Payu\Components\Form;
+use Imsidz\Payu\Concerns\Transaction;
+use Imsidz\Payu\Contracts\HasFormParams;
+use Imsidz\Payu\Events\TransactionInitiated;
+use Imsidz\Payu\Gateway\Factory;
+use Imsidz\Payu\Gateway\Gateway;
+use Imsidz\Payu\Models\PayuTransaction;
 
 class Payu implements HasFormParams
 {
@@ -51,7 +51,7 @@ class Payu implements HasFormParams
         Validator::make(compact('url'), ['url' => 'required|url'])->validate();
         $url = preg_replace("/^http:/i", "https:", $url);
         $this->destination = $url;
-        if (! $this->gateway) {
+        if (!$this->gateway) {
             $this->via($this->defaultGateway());
         }
 
@@ -100,7 +100,7 @@ class Payu implements HasFormParams
 
     protected function morphFields()
     {
-        if (! $this->payment->model) {
+        if (!$this->payment->model) {
             return [];
         }
 
@@ -118,13 +118,12 @@ class Payu implements HasFormParams
     public function toArray(): array
     {
         $failed = preg_replace("/^http:/i", "https:", $this->getSignedRoute('failed'));
-	    $successful = preg_replace("/^http:/i", "https:", $this->getSignedRoute('successful'));
+        $successful = preg_replace("/^http:/i", "https:", $this->getSignedRoute('successful'));
 
         return [
             'furl' => $failed,
             'surl' => $successful,
         ];
-
     }
 
     public function fields(): array

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tzsk\Payu\Components;
+namespace Imsidz\Payu\Components;
 
 use Illuminate\View\Component;
 

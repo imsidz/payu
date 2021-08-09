@@ -1,12 +1,12 @@
 <?php
 
-namespace Tzsk\Payu\Actions;
+namespace Imsidz\Payu\Actions;
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Validation\ValidationException;
-use Tzsk\Payu\Gateway\Gateway;
-use Tzsk\Payu\Gateway\PayuMoney;
-use Tzsk\Payu\Models\PayuTransaction;
+use Imsidz\Payu\Gateway\Gateway;
+use Imsidz\Payu\Gateway\PayuMoney;
+use Imsidz\Payu\Models\PayuTransaction;
 
 class VerifyPayuMoney implements Actionable
 {
@@ -21,7 +21,7 @@ class VerifyPayuMoney implements Actionable
 
     public function handle(PayuTransaction $transaction)
     {
-        if (! $transaction->shouldVerify()) {
+        if (!$transaction->shouldVerify()) {
             return false;
         }
 

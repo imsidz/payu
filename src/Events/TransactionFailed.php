@@ -1,11 +1,11 @@
 <?php
 
-namespace Tzsk\Payu\Events;
+namespace Imsidz\Payu\Events;
 
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use Tzsk\Payu\Models\PayuTransaction;
+use Imsidz\Payu\Models\PayuTransaction;
 
 class TransactionFailed
 {

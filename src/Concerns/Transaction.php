@@ -1,12 +1,12 @@
 <?php
 
-namespace Tzsk\Payu\Concerns;
+namespace Imsidz\Payu\Concerns;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;
-use Tzsk\Payu\Contracts\HasFormParams;
+use Imsidz\Payu\Contracts\HasFormParams;
 
 class Transaction implements HasFormParams
 {

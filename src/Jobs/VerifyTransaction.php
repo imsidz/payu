@@ -1,13 +1,13 @@
 <?php
 
-namespace Tzsk\Payu\Jobs;
+namespace Imsidz\Payu\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use Tzsk\Payu\Models\PayuTransaction;
+use Imsidz\Payu\Models\PayuTransaction;
 
 class VerifyTransaction implements ShouldQueue
 {

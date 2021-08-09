@@ -1,10 +1,10 @@
 <?php
 
-namespace Tzsk\Payu\Concerns;
+namespace Imsidz\Payu\Concerns;
 
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
-use Tzsk\Payu\Contracts\HasFormParams;
+use Imsidz\Payu\Contracts\HasFormParams;
 
 class Customer implements HasFormParams
 {

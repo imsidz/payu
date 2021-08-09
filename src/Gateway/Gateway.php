@@ -1,9 +1,9 @@
 <?php
 
-namespace Tzsk\Payu\Gateway;
+namespace Imsidz\Payu\Gateway;
 
-use Tzsk\Payu\Actions\Actionable;
-use Tzsk\Payu\Contracts\HasFormParams;
+use Imsidz\Payu\Actions\Actionable;
+use Imsidz\Payu\Contracts\HasFormParams;
 
 abstract class Gateway implements HasFormParams
 {

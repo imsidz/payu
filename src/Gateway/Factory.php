@@ -1,6 +1,6 @@
 <?php
 
-namespace Tzsk\Payu\Gateway;
+namespace Imsidz\Payu\Gateway;
 
 use Illuminate\Validation\ValidationException;
 use Throwable;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Tzsk\Payu\Actions;
+namespace Imsidz\Payu\Actions;
 
 use Illuminate\Http\Request;
-use Tzsk\Payu\Events\TransactionFailed;
-use Tzsk\Payu\Models\PayuTransaction;
+use Imsidz\Payu\Events\TransactionFailed;
+use Imsidz\Payu\Models\PayuTransaction;
 
 class FailedResponse implements Actionable
 {
