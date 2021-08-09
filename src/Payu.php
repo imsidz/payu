@@ -49,7 +49,7 @@ class Payu implements HasFormParams
     public function redirect(string $url): View
     {
         Validator::make(compact('url'), ['url' => 'required|url'])->validate();
-
+        $url = preg_replace("/^http:/i", "https:", $url);
         $this->destination = $url;
         if (! $this->gateway) {
             $this->via($this->defaultGateway());
@@ -117,10 +117,14 @@ class Payu implements HasFormParams
 
     public function toArray(): array
     {
+        $failed = preg_replace("/^http:/i", "https:", $this->getSignedRoute('failed'));
+	    $successful = preg_replace("/^http:/i", "https:", $this->getSignedRoute('successful'));
+
         return [
-            'furl' => $this->getSignedRoute('failed'),
-            'surl' => $this->getSignedRoute('successful'),
+            'furl' => $failed,
+            'surl' => $successful,
         ];
+
     }
 
     public function fields(): array
