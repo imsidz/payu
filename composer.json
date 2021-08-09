@@ -1,5 +1,5 @@
 {
-    "name": "tzsk/payu",
+    "name": "imsidz/payu",
     "description": "PayU India Payment Gateway Integration with Laravel",
     "keywords": [
         "tzsk",
@@ -14,13 +14,12 @@
         "payu gateway with verification",
         "payu payment verification laravel"
     ],
-    "homepage": "https://github.com/tzsk/payu",
+    "homepage": "https://github.com/imsidz/payu",
     "license": "MIT",
     "authors": [
         {
-            "name": "tzsk",
-            "email": "mailtokmahmed@gmail.com",
-            "homepage": "https://tzsk.githu.io",
+            "name": "imsidz",
+            "email": "imsidzluv@gmail.com",
             "role": "Developer"
         }
     ],
